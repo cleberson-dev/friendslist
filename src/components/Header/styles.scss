@@ -1,0 +1,16 @@
+@import "../../utils/_variables";
+
+.header {
+  background-color: map-get($colors, "primary");
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .header-title {
+    margin: 0;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+  }
+}
