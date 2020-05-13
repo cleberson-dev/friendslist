@@ -1,0 +1,12 @@
+@import "../../utils/variables";
+
+.contact-info {
+  .contact-info-title {
+    color: map-get($colors, "dark");
+    margin: 0;
+  }
+
+  .contact-info-count {
+    color: map-get($colors, "gray");
+  }
+}
