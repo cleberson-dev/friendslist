@@ -6,17 +6,20 @@ import IconButton from "../IconButton";
 import { ReactComponent as DeleteIcon } from '../../img/delete.svg';
 import { ReactComponent as EditIcon } from '../../img/edit.svg';
 
+const isPhoto = (photoSrc) => photoSrc && photoSrc !== "";
+
+
 function Contact({ 
-  photo = "https://interfacetreinamentos.com.br/wp-content/uploads/2016/04/img-profile-default.jpg", 
+  photo, 
   name, 
   telephone 
 }) {
   return (
     <div className="contact">
       <img 
-        alt="Profile Photo"
+        alt={`Foto de Perfil de ${name}`}
         className="contact-photo" 
-        src={photo} 
+        src={isPhoto(photo) ? photo : "https://interfacetreinamentos.com.br/wp-content/uploads/2016/04/img-profile-default.jpg"} 
       />
       <address className="contact-details">
         <div className="contact-name">{name}</div>
