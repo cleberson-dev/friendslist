@@ -1,9 +1,12 @@
 import React from "react";
 import "./styles.scss";
 
-function Button({ text, onClickHandler = (e) => e.preventDefault() }) {
+function Button({ 
+  text,
+  ...props 
+}) {
   return (
-    <button className="button" onClick={onClickHandler}>
+    <button className="button" {...props}>
       {text}
     </button>
   );
