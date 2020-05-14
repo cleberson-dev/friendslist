@@ -1,0 +1,48 @@
+@import "../../utils/variables";
+
+.contact {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 1.75rem 1.5rem;
+  max-width: 100%;
+  box-sizing: border-box;
+
+  & > .contact-photo {
+    border-radius: 50%;
+    border: 3px solid map-get($colors, "primary");
+    width: 2.5rem;
+  }
+
+  .contact-details {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+
+    .contact-name {
+      font-weight: 500;
+      font-style: normal;
+      font-size: 1rem;
+      max-height: 1.2rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .contact-telephone {
+      color: map-get($colors, "gray");
+      font-style: normal;
+      font-size: 0.8rem;
+      font-weight: 500;
+      text-decoration: none;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .contact-actions {
+    display: flex;
+    height: fit-content; 
+  }
+}
