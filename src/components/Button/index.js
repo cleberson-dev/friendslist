@@ -1,10 +1,10 @@
 import React from "react";
 import "./styles.scss";
 
-function Button() {
+function Button({ text, onClickHandler = (e) => e.preventDefault() }) {
   return (
-    <button className="button">
-      + Novo
+    <button className="button" onClick={onClickHandler}>
+      {text}
     </button>
   );
 }
