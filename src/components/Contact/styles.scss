@@ -9,9 +9,8 @@
   box-sizing: border-box;
 
   & > .contact-photo {
-    border-radius: 50%;
-    border: 3px solid map-get($colors, "primary");
     width: 2.5rem;
+    height: 2.5rem;
   }
 
   .contact-details {
@@ -45,4 +44,9 @@
     display: flex;
     height: fit-content; 
   }
+}
+
+.contact-photo {
+  border-radius: 50%;
+  border: 3px solid map-get($colors, "primary");
 }

@@ -7,7 +7,7 @@ import { ReactComponent as DeleteIcon } from '../../img/delete.svg';
 import { ReactComponent as EditIcon } from '../../img/edit.svg';
 
 const isPhoto = (photoSrc) => photoSrc && photoSrc !== "";
-
+const defaultPhoto = "https://interfacetreinamentos.com.br/wp-content/uploads/2016/04/img-profile-default.jpg";
 
 function Contact({ 
   photo, 
@@ -19,7 +19,7 @@ function Contact({
       <img 
         alt={`Foto de Perfil de ${name}`}
         className="contact-photo" 
-        src={isPhoto(photo) ? photo : "https://interfacetreinamentos.com.br/wp-content/uploads/2016/04/img-profile-default.jpg"} 
+        src={isPhoto(photo) ? photo : defaultPhoto} 
       />
       <address className="contact-details">
         <div className="contact-name">{name}</div>
