@@ -1,0 +1,13 @@
+.App > main {
+  margin-top: 1rem;
+  
+  & > .container {
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+
+  & > .button {
+    align-self: flex-end;
+  }
+  }
+}
