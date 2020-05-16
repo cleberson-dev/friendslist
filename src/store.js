@@ -6,11 +6,7 @@ export const initialState = {
     type: ''
   },
   editContact: { name: '', telephone: '', photo: '' },
-  contacts: [
-    // { id: 1, name: "Cleberson Junior", telephone: "+55 98 98507-6563", photo: "" },
-    // { id: 2, name: "Cleberson Junior", telephone: "+55 98 98507-6563", photo: "" },
-    // { id: 3, name: "Cleberson Junior", telephone: "+55 98 98507-6563", photo: "" }
-  ]
+  contacts: []
 };
 
 export function reducer(state, action) {
