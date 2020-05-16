@@ -1,0 +1,60 @@
+@import "../../utils/variables";
+
+.create-contact-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  & > .title {
+    color: map-get($colors, "dark");
+  }
+
+  & > .contact-photo {
+    max-width: 60%;
+    max-height: 60%;
+    border-width: 5px;
+  }
+
+  & > .form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+
+    label { 
+      text-transform: uppercase;
+      color: #DCDCDC;
+      font-weight: 500;
+      font-size: 0.8rem;
+    }
+
+    input {
+      border: none;
+      border-bottom: 2px solid #DCDCDC;
+      color: map-get($colors, "dark");
+      font-weight: bolder;
+      font-size: 1.2rem;
+      font-family: 'Open Sans', sans-serif;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      
+      &:focus { 
+        outline: none; 
+        border-bottom-color: map-get($colors, "primary");
+        transition: border-bottom-color 0.3s; 
+      }
+    }
+  }
+
+
+  & > .button {
+    margin-top: 1rem;
+    justify-self: flex-end;
+
+    @media (max-width: 480px) {
+      width: 80%;
+      padding: 7px 0;
+    }
+  }
+}
