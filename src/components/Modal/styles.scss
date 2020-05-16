@@ -1,3 +1,5 @@
+@import "../../utils/variables";
+
 .modal {
   position: fixed;
   background-color: white;
@@ -5,4 +7,16 @@
   height: 100%;
   top: 0;
   left: 0;
+}
+
+.modal > .actions {
+  position: fixed;
+  display: flex;
+  top: 1rem;
+  right: 2rem;
+
+  svg {
+    fill: map-get($colors, "dark");
+    width: 2rem;
+  }
 }
